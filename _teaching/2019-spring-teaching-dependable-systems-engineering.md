@@ -1,12 +1,13 @@
 ---
-title: "Graduate course - Engineering of Safety-Critical Software Systems"
+title: "Graduate course - Engineering of Safety-Critical Software Systems - 1.5 year"
 collection: teaching
 type: "Master degree course - Engineering of Safety-Critical Software Systems"
-permalink: /teaching/2020-spring-teaching-dependable-systems-engineering
+permalink: /teaching/2019-spring-teaching-dependable-systems-engineering
 venue: "Université de Technologie de Compiègne"
 date: 2019-02-01
 location: "Compiègne, France"
 duration: "Three semesters"
+excerpt: ""
 ---
 
 

@@ -1,0 +1,38 @@
+name: Jekyll Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Runs on push to the main branch
+  pull_request:
+    branches:
+      - main  # Runs on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1  # Adjust to the version used by your Jekyll site
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build the site
+        run: |
+          bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: ram-on/github-pages-deploy-action@v1.5.0
+        with:
+          branch: gh-pages  # This is where the site will be deployed to
+          folder: _site    # Folder where Jekyll builds the site
+          token: ${{ secrets.GITHUB_TOKEN }}

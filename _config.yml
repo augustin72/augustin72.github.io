@@ -305,7 +305,7 @@ sass:
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   load_paths:
     - _sass
-    - vendor/breakpoint
+    # - vendor/breakpoint
 
 
 # Outputting

@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Augustin / Projects website"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Augustin"
+name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://augustin72.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "augustin72/augustin72.github.io"
+repository               : "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,21 +23,21 @@ repository               : "augustin72/augustin72.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Augustin Viot"
+  name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "PhD - Eng in computer sciences"
-  location         : #"Earth"
-  employer         : #"Red Brick University"
+  bio              : "Short biography for the left-hand sidebar"
+  location         : "Earth"
+  employer         : "Red Brick University"
   uri              : # URL
-  email            : #"none@example.org" 
+  email            : "none@example.org" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=mjWxy3oAAAAJ&hl=fr"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -45,12 +45,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "augustin72"
+  github           : "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : #"bsky.app" # Replace this with you Bluesky username
+  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -83,8 +83,6 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
-  posters:
-    title: 'Poster presentations'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -221,16 +219,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  # projects:
-  #   output: true
-  #   permalink: /:projects/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
-
 
 
 # These settings control how pages and collections are included in the site
@@ -271,15 +265,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _projects
-  # - scope:
-  #     path: ""
-  #     type: _projects
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comment: true
   # _portfolio
   - scope:
       path: ""

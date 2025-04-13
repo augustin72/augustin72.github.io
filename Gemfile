@@ -11,3 +11,4 @@ end
 
 gem 'github-pages'
 gem 'breakpoint', '~> 2.7.0'
+gem 'faraday-retry'
